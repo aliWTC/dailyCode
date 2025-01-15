@@ -1,0 +1,77 @@
+public class javaFizzBuzz {
+  public static void main(String args[]) {
+    int fizz = 3;
+    int buzz = 5;
+    int fizzbuzz = 15;
+    
+    int testNum1 = 15;
+    int testNum2 = 5;
+    int testNum3 = 3;
+    int randomTestNum = 2;
+    
+    
+    
+    
+
+    if (testNum1 % fizzbuzz == 0) {
+        System.out.println("fizzbuzz");
+    }
+    else if (testNum1 % buzz == 0){
+        System.out.println("buzz");
+    }
+    else if (testNum1 % fizz == 0){
+        System.out.println("fizz");
+    }
+    else {
+        System.out.println("NONE");
+    }
+    
+    
+    
+    
+    if (testNum2 % fizzbuzz == 0) {
+        System.out.println("fizzbuzz");
+    }
+    else if (testNum2 % buzz == 0){
+        System.out.println("buzz");
+    }
+    else if (testNum2 % fizz == 0){
+        System.out.println("fizz");
+    }
+    else {
+        System.out.println("NONE");
+    }
+    
+    
+    if (testNum3 % fizzbuzz == 0) {
+        System.out.println("fizzbuzz");
+    }
+    else if (testNum3 % buzz == 0){
+        System.out.println("buzz");
+    }
+    else if (testNum3 % fizz == 0){
+        System.out.println("fizz");
+    }
+    else {
+        System.out.println("NONE");
+    }
+    
+    
+    
+    if (randomTestNum % fizzbuzz == 0) {
+        System.out.println("fizzbuzz");
+    }
+    else if (randomTestNum % buzz == 0){
+        System.out.println("buzz");
+    }
+    else if (randomTestNum % fizz == 0){
+        System.out.println("fizz");
+    }
+    else {
+        System.out.println("NONE");
+    }
+    
+    
+    
+    
+    
