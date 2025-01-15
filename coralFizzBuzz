@@ -1,0 +1,18 @@
+integer randInt
+randInt = RandomNumber(1, 100)
+ 
+ 
+ 
+ 
+if randInt % 15 == 0
+   Put "FIZZBUZZ" to output
+   
+elseif randInt % 5 == 0
+   Put "BUZZ" to output
+ 
+ 
+elseif randInt % 3 == 0
+   Put "FIZZ" to output
+   
+else
+   Put "NONEEEE" to output
