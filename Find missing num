@@ -14,8 +14,8 @@ while i <= listSize:
     
 print('LIST:', listSpace)
 
-
-listSpace.remove(randint(1,listSize))
+randomNumRemoved = randint(1,listSize)
+listSpace.remove(randomNumRemoved)
 print('NUMBER REMOVED:', listSpace)
 
 
@@ -24,6 +24,7 @@ print('NUMBER REMOVED:', listSpace)
 def addNumBack(list):
     for i in list:
         indexOfNum = list.index(i)
+        
         if list[indexOfNum] != list[indexOfNum-1]+1:
             deletedIndex = list[indexOfNum]
             if deletedIndex != 1:
@@ -32,6 +33,20 @@ def addNumBack(list):
                 list.insert(indexOfNum, deletedIndex-1)
                 print('Number missing:', deletedIndex-1)
                 print('NUMBER ADDED:',list)
+        if listSize == randomNumRemoved:
+            listSpace.append(randomNumRemoved)
+            print("Number deleted:", randomNumRemoved)
+            print(listSpace)
+            break
+
+
+        if randomNumRemoved == 1:
+            listSpace.append(1)
+            print("Number deleted:", 1)
+            print(listSpace)
+            break
+
 
 addNumBack(listSpace)
             
+
