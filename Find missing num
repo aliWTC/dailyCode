@@ -1,0 +1,37 @@
+import random as r
+from random import *
+
+
+listSize = r.randint(1,15)
+
+listSpace = []
+
+
+i=1
+while i <= listSize:
+    listSpace.append(i)
+    i+=1
+    
+print('LIST:', listSpace)
+
+
+listSpace.remove(randint(1,listSize))
+print('NUMBER REMOVED:', listSpace)
+
+
+
+
+def addNumBack(list):
+    for i in list:
+        indexOfNum = list.index(i)
+        if list[indexOfNum] != list[indexOfNum-1]+1:
+            deletedIndex = list[indexOfNum]
+            if deletedIndex != 1:
+    
+                indexOfNum = list.index(deletedIndex)
+                list.insert(indexOfNum, deletedIndex-1)
+                print('Number missing:', deletedIndex-1)
+                print('NUMBER ADDED:',list)
+
+addNumBack(listSpace)
+            
