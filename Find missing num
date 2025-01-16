@@ -31,22 +31,21 @@ def addNumBack(list):
     
                 indexOfNum = list.index(deletedIndex)
                 list.insert(indexOfNum, deletedIndex-1)
-                print('Number missing:', deletedIndex-1)
+                print('NUMBER MISSING:', deletedIndex-1)
                 print('NUMBER ADDED:',list)
         if listSize == randomNumRemoved:
             listSpace.append(randomNumRemoved)
-            print("Number deleted:", randomNumRemoved)
-            print(listSpace)
+            print("NUMBER MISSING:", randomNumRemoved)
+            print('NUMBER ADDED:',listSpace)
             break
 
 
-        if randomNumRemoved == 1:
-            listSpace.append(1)
-            print("Number deleted:", 1)
-            print(listSpace)
-            break
+    if len(listSpace) == 0:
+        listSpace.append(1)
+        print("NUMBER MISSING:", 1)
+        print('NUMBER ADDED:', listSpace)
+        
 
 
 addNumBack(listSpace)
             
-
